@@ -28,6 +28,14 @@ $pink: #e82930;
     }
     .cost{
         color: $pink;
+        text-align: center;
+        margin-top: 30px;
+        
+        div{
+            background: #fff;
+            display: inline-block;
+            padding: 0 25px;            
+        }
     }
     .conf-subtitle{
         color: #9b9b9b;

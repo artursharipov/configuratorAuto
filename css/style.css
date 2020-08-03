@@ -17,7 +17,13 @@
     color: #fff;
     margin: 0; }
   #configurator .cost {
-    color: #e82930; }
+    color: #e82930;
+    text-align: center;
+    margin-top: 30px; }
+    #configurator .cost div {
+      background: #fff;
+      display: inline-block;
+      padding: 0 25px; }
   #configurator .conf-subtitle {
     color: #9b9b9b;
     font-size: 20px;
