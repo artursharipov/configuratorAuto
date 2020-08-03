@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*{
+    font-family: 'Roboto', sans-serif;
+}
+$orange: #e9a31b;
+$bronze: #686556;
+$blue: #637b85;
+$red: #881a22;
+$black: #252525;
+$pink: #e82930;
+
+#configurator{
+    background-color: $black;
+    background-image: url(../img/configurator/bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+
+    h3,
+    .cost{
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h3{
+        color: #fff;
+        margin: 0;
+    }
+    .cost{
+        color: $pink;
+    }
+    .conf-subtitle{
+        color: #9b9b9b;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .image-container{
+        position: relative;
+        display: inline-block;
+        
+        #conf-image{
+            max-width: 100%;
+        }
+    }
+    
+    .configurator__nav{
+        text-align: center;
+
+        .nav-title{
+            color: #9b9b9b;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .nav-box{
+            padding: 13px 10px;
+        }
+        .change-color{
+            span{
+                color: #fff;
+                display: inline-block;
+                width: 40px;
+                padding: 10px 0 8px;
+                text-align: center;
+                cursor: pointer;
+                margin-bottom: 7px;
+
+                i{
+                    -webkit-transition: -webkit-transform .1s;
+                    transition: transform .1s;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                }
+                &.is_selected i{
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+                &.red{
+                    background-color: $red;
+                }
+                &.blue{
+                    background-color: $blue;
+                }
+                &.bronze{
+                    background-color: $bronze;
+                }
+            }
+        }
+        .switcher{
+            span{
+                display: inline-block;
+                font-weight: 700;
+                cursor: pointer;
+                margin-bottom: 7px;
+
+                color: #9b9b9b;
+                text-transform: uppercase;
+                border: 1px dashed #c2c2c2;
+                border-radius: 4px;
+                padding: 10px 20px 8px;
+
+                &.is_selected{
+                    color: #fff;
+                    border-color: $orange;
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+}

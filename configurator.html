@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -15,23 +16,72 @@
                 <div class="col-md-8">
 
                     <div class="configurator__view">
+                        <h3>Toyota Corolla</h3>
+                        <div class="conf-subtitle">Конфигуратор стоимости автомобиля</div>
 
+                        <div class="image-container">
+                            <img id="conf-image" src="img/configurator/bronze.png" alt="">
+                        </div>
+
+                        <div class="cost">
+                            <span id="conf-price"></span> р.
+                        </div>
                     </div>
 
                 </div>
                 <div class="col-md-4">
                     <nav class="configurator__nav">
-                        <div class="group" id="engine">
-                            <span>
-                                <i class="glyphicon glyphicon-ok"></i>
-                            </span>
+                        
+                        <div class="nav-box">
+                            <div class="nav-title">
+                                Объём двигателя
+                            </div>
+                            <div class="change-engine switcher">
+                                <span class="is_selected" data-price="1140000">1.4</span>
+                                <span data-price="1250000">1.6</span>
+                                <span data-price="1310000">2.0</span>
+                            </div>
                         </div>
-                        <div class="group" id="transmission">
 
+                        <div class="nav-box">
+                            <div class="nav-title">
+                                Коробка передач
+                            </div>
+                            <div class="change-transmission switcher">
+                                <span class="is_selected" data-price="90000">MT</span>
+                                <span data-price="250000">AT</span>
+                                <span data-price="210000">CVT</span>
+                            </div>
                         </div>
-                        <div class="group" id="color">
 
+                        <div class="nav-box">
+                            <div class="nav-title">
+                                Комплектация салона
+                            </div>
+                            <div class="change-equipment switcher">
+                                <span class="is_selected" data-price="180000">Norma</span>
+                                <span data-price="260000">Comfort</span>
+                                <span data-price="350000">Premium</span>
+                            </div>
                         </div>
+
+                        <div class="nav-box">
+                            <div class="nav-title">
+                                Цвет кузова
+                            </div>
+                            <div class="change-color">
+                                <span class="bronze is_selected" data-price="30000" data-img="bronze">
+                                    <i class="glyphicon glyphicon-ok"></i>
+                                </span>
+                                <span class="blue" data-price="39000" data-img="blue">
+                                    <i class="glyphicon glyphicon-ok"></i>
+                                </span>
+                                <span class="red" data-price="55000" data-img="red">
+                                    <i class="glyphicon glyphicon-ok"></i>
+                                </span>
+                            </div>
+                        </div>
+                         
                     </nav>
                 </div>
             </div>
